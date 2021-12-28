@@ -18,7 +18,8 @@ if initiate == "YES":
     endings = []
     urls = []
     try:
-        driver = webdriver.Chrome("C:/Users/mbah2/Downloads/chromedriver.exe")
+        # * is to censor Personal Information
+        driver = webdriver.Chrome("C:/Users/****/Downloads/chromedriver.exe")
         driver.get(url)
         page = driver.page_source
         soup = BeautifulSoup(page, 'html.parser')
