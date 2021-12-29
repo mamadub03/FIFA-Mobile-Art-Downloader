@@ -5,20 +5,38 @@ import requests
 from selenium.webdriver.chrome.options import Options
 import io
 from PIL import Image
+import os
+from tqdm import tqdm
+import time
+
+
+
+directory = "BeautifulSoup"
+parent_dir = "C:/Users/mbah2/PycharmProjects"
+
+PATH = os.path.join(parent_dir,directory)
 
 initiate = input("Would you like to activate the FIFA Mobile Database scraper?: ")
+
+
+def progress_bar(iterable):
+    for i in tqdm(iterable):
+        time.sleep(2)
 
 
 if initiate == "YES":
 
     search_term = input("What key word are you trying to look for?: ")
 
+    folder_name = input("What will you like to name your folder?: ")
+
+    file_name = input("What will you like to name your file?: ")
+
     url = "https://sappurit.github.io/s5art/"
 
     endings = []
     urls = []
     try:
-        # * is to censor Personal Information
         driver = webdriver.Chrome("C:/Users/****/Downloads/chromedriver.exe")
         driver.get(url)
         page = driver.page_source
@@ -62,9 +80,10 @@ if initiate == "YES":
 
     n = 1
     try:
+        os.mkdir(folder_name)
+
         for i in urls:
-            print(f"downloading {i}")
-            download_image("imgs/", i, f'logo{n}.png')
+            download_image(f"{folder_name}/", i, f'{file_name}{n}.png')
             n += 1
         print(f'Successfully scraped! {url} ')
     except:
