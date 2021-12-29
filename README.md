@@ -16,11 +16,11 @@ The "img" file is to show the result of scrape stored in a folder
 ## Future features
 
 - Add GUI interaction with Tkinter or Kivy
-- "Create File" feature and save the downloaded contents into the new created file in a specified file location
-- Customizable File Names
+- "Create File" feature and save the downloaded contents into the new created file in a specified file location ✅
+- Customizable File Names ✅
 - Downloadble Application File
 - Possible Web application? 🤔
-- Open File once scraper finishes running
+- Open File once scraper finishes running 🔨
 - Google API connection to upload downloaded contents to google drive
 
 
