@@ -1,4 +1,8 @@
 # FIFA-Mobile-Art-Downloader
+
+This is my first public project on github so please feel free to contribute, suggest ideas, ideas to fix code, Documentation improvements, and etc. just send a pull request! :) 
+
+
 Using selenium and Beautiful Soup the bot goes through and searches for specific search terms specified by the user. It then saves the image and it's link to a table and stores it in a table, the table is then iterated over and each iteration is downloaded to the specific file path
 
 NOTE: This is not set for use public use to be able to download to your local machine. That is the goal in the end which is to develop the project enough to make it downloadable and usable for users to use on their local machine. This is the source code of the project to see the basic functionality and what is the idea behind the project I am creating
