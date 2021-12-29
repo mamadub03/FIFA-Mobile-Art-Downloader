@@ -18,12 +18,6 @@ PATH = os.path.join(parent_dir,directory)
 
 initiate = input("Would you like to activate the FIFA Mobile Database scraper?: ")
 
-
-def progress_bar(iterable):
-    for i in tqdm(iterable):
-        time.sleep(2)
-
-
 if initiate == "YES":
 
     search_term = input("What key word are you trying to look for?: ")
