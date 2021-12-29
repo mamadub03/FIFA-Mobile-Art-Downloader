@@ -29,3 +29,12 @@ This is the BETA release of this application, keep in mind this is the skeleton 
   - Update documentation and release notes ✅
 
 Next relase will focus on more adapatable and dynamic features such as creating new files, opening file location once process finishes, customizable file names, and customizable download path of choice.
+
+## Version 0.0.2
+
+
+This is the 2nd version of the BETA release of this application, keep in mind this is the skeleton of a larger project. Notes for this release includes:
+
+  - Customizable File Names ✅
+  - Dynamic Adaptable Features ✅
+  - Create new files to store images ✅
